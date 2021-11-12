@@ -1,0 +1,7 @@
+<h1>home</h1>
+<ul>
+    <% @chapters.each do |x| %>
+        <li><a href="/home/<%=x.id%>"><%= x.title %></a> - <%= x.body.split.count %> words total</li>
+    <% end %>
+</ul>
+<a href="/entry"><h3>Create a new entry</h3></a>

@@ -1,0 +1,9 @@
+<h1>here is our form!</h1>
+
+<form action="/letsroll" method="post">
+    Number of sides: <input type="number" name="sides"><br>
+    Number of dice: <input type="number" name="number"><br>
+    Character Name: <input type="text" name="character_name">
+    <input type="text" id="authenticity_token" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <button type="submit">GO!</button>
+</form>
