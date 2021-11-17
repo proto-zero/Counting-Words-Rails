@@ -1,4 +1,12 @@
-# README
+# Word Counter
+
+## Notes
+
+This app will let you write essays, chapters, posts, etc..., store them in a database, and deliver the total word count of each entry.
+
+
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

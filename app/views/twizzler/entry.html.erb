@@ -2,10 +2,17 @@
 <div class="entry_body">
     <form action="/count" method="post">
         <input type="text" name="title" autofocus placeholder="Entry Title..."><br>
-        <input type="text" name="body" placeholder="Entry Text...">
+        <input type="text" id="text" name="body" placeholder="Entry Text..." onchange="countUp()">
         <button type="submit">Save Entry!</button><br>
         <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%=form_authenticity_token%>">
     </form>
 </div>
 
 <a href="/home"><h3>Main</h3></a>
+
+<script>
+function countUp() {
+    const words = document.getElementById("text").value;
+    console.log(words);
+}
+</script>
